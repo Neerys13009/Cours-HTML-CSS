@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Cours</title>
+    <link rel="shortcut icon" href="Banastra.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1><span>&trade;</span>Ici header</h1>
+    </header>
+
+    <section>
+      <div>
+        <h1>Titre H1 section</h1>
+
+        <p>
+          Texte Basique. <em>Texte italique.</em><strong>Texte en gras</strong>
+        </p>
+
+        <span> texte en span</span>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+          odio consequatur inventore architecto, ab itaque rerum quae laboriosam
+          illum ea incidunt officiis alias culpa omnis ad temporibus ipsam nobis
+          et.
+        </p>
+
+        <img src="Banastra.png" height="300" alt="description-image" />
+        <ul>
+          <li>UL = unordered List</li>
+          <li>UL = unordered List</li>
+          <li>UL = unordered List</li>
+          <li>UL = unordered List</li>
+        </ul>
+        <ol>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+        </ol>
+
+        <table border="1" width="80%">
+          <!-- Légende -->
+          <caption>
+            Membre de l'équipe
+          </caption>
+          <!-- En-Tête -->
+          <thead>
+            <tr>
+              <th>Jeux</th>
+              <th>Membres</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>League of Legends</td>
+              <td>Cabo, cincrof, saken, caliste,targa</td>
+            </tr>
+            <tr>
+              <td>Valorant</td>
+              <td>fsdfs, fsdfd,fdsfds,rgeg,gergf</td>
+            </tr>
+            <tr>
+              <td>Rocket League</td>
+              <td>siuhq, fdsjhgds, dsjh</td>
+            </tr>
+          </tbody>
+          <div>
+            <h2>Ici Le lien</h2>
+            <a href="https://www.youtube.com/" target="_blank">Youtube.com</a>
+            <br />
+
+            <a href="https://htmlcheatsheet.com/" target="_blank"
+              >Html cheat sheet</a
+            >
+
+            <video
+              src="tunnel_-_68978 (1080p).mp4"
+              autoplay
+              loop
+              muted
+              height="300"
+            ></video>
+          </div>
+        </table>
+      </div>
+    </section>
+    <br />
+    <!-- Formulaire -->
+    <section>
+      <form action="/action.php" method="post">
+        <label for="Nom">Nom </label>
+        <input id="Nom" type="text" placeholder="Entrer votre nom" /> <br />
+        <label for="Prenom">Premon</label>
+        <input type="text" id="Prenom" placeholder="Tageule" />
+        <label for="Age">Age</label>
+        <input type="number" id="Age" min="7" max="77" step="1" value="18" />
+        <!-- Input select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="Homme">Homme</option>
+          <option selected value="Femme">Femme</option>
+        </select>
+        <br />
+        <!-- Input radio -->
+        <div>
+          <input type="radio" name="type" checked id="Humain" />
+          <label for="Human">Humain</label>
+          <input type="Radio" name="type" id="Chien" />
+          <label for="chien">Chien</label>
+          <input type="Radio" name="type" id="CHat" />
+          <label for="chat">Chat</label>
+        </div>
+        <!-- Input Checkbox -->
+        <label><input type="checkbox" />Accepter les conditions</label>
+        <br />
+        <input type="submit" value="Valider" />
+      </form>
+    </section>
+    <br />
+    <!-- Mail et envoi de fichier -->
+    <a href="mailto:david@htmlgg.com">Ecrivez moi</a>
+    <br />
+    <a href="Notice.txt" download="nom-du-fichier">DL la notice</a>
+  </body>
+</html>

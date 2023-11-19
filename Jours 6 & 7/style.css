@@ -1,0 +1,146 @@
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+main {
+    min-height: 500px;
+    width: auto;
+     /* margin: 0 20px 0 20px; */ margin: 0 auto;
+    background: rgba(0, 0, 255, 0.315);
+    border: 2px solid blue;
+    border-radius: 17px;
+    box-shadow: 8px 10px 12px #5969c3;
+    padding: 10px;
+}
+main h2 {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.flexbox, .Grid, .absolute {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 150px;
+}
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+}
+.flexbox li {
+    list-style-type: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* GRID */
+.gridContenant {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.Grid img {
+   width: 80%;
+   margin: 20px auto;
+   display: block;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "i1 i2" "ta ta" "vi bt";
+}
+
+input, textarea {
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid darkblue;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+textarea {
+    height: 35px;
+    grid-area: ta;
+    resize: none;
+}
+
+#btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+    background: lightpink;
+    transition: 0.4s;
+}
+
+#btn-submit:hover {
+    background: lightsalmon;
+    color: red;
+}
+
+/* ABSOLUTE  */
+.absolute {
+    position: relative;
+}
+#circle1 {
+    height: 80px;
+    width: 80px;
+    background: lightsalmon;
+    position: absolute;
+    border-radius: 150px;
+    top: 0;
+    right: 0;
+
+}
+
+#circle2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    background: teal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px){
+    .gridContenant{
+        display: block;
+    }
+    .gridContenant img {
+        width: 35%;
+    
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .flexbox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+}

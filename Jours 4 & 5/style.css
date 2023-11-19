@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
+body{
+    background: whitesmoke;
+    background: url(./David_L_4k_Instagram_Account_Photo_related_to_cannabis_hemp_and_06115d78-41d2-4a64-8383-a9dbdeec6dfc.png) center/cover;
+    min-height: 100vh; 
+}   
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    /* Les tailles de police doivent etre en REM */
+    font-size: 2.5rem;
+    text-shadow: 7px 2px 11px #00000038;
+    /* On peux aussi utilisé : color: rgb(234, 67, 123); */
+    color: rgb(0, 255, 21);
+    font-family:  "Agbalumo", sans-serif;
+}
+
+.SousTitre1 {
+    color: rgb(216, 16, 16);
+    font-size: 2rem;
+    /* Dans cet exemple, le paragraphe avec la classe
+    "SousTitre1" sera stylisé avec du texte Rouge
+    et une taille de police de 2rem.
+    Tu peux utiliser la même classe sur plusieurs
+    éléments pour leur appliquer le même style. */
+}
+
+#Boite1 {
+    margin: 20px;
+    width: 150px;
+    background-color: blue;
+    /* Dans cet exemple, la div avec l'ID "Boite1"
+    sera stylisée avec une marge de 20 pixels,
+    et une couleur de fond blue.
+    Les ID sont censés être uniques sur une page,
+    c'est pourquoi un seul élément est ciblé. */
+}
+
+.parent {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.absolu {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: red;
+    color: white;
+    /* Dans cet exemple, l'élément avec la classe "absolu" est
+    positionné absolument par rapport à son ancêtre positionné
+    le plus proche (la div avec la classe "parent").
+    Il est déplacé de 50 pixels vers le bas et de 50 pixels
+    vers la gauche. La position absolue lui permet de se
+    superposer au contenu de son ancêtre. */
+}
+
+
+.relatif {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: blue;
+    color: white;
+    /* Dans cet exemple, l'élément avec la classe "relatif"
+    est positionné relativement par rapport à sa position
+    normale dans le flux du document. Il est déplacé de
+    20 pixels vers le bas et de 30 pixels vers la gauche. */
+}
+
+.conteneurFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Flexbox:
+    Flexbox (Flexible Box) est un modèle de disposition qui
+    permet de créer des mises en page plus flexibles et dynamiques.
+    Il est particulièrement utile pour créer des structures
+    à une dimension, comme des rangées ou des colonnes. */
+}
+.conteneurGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colonnes de largeur égale */
+    grid-template-rows: repeat(5, 1fr); /* 5 lignes de hauteur égale */
+    gap: 10px; /* Espace entre les cellules, ajuste selon tes besoins */
+    justify-items: center;
+    /* Grid:
+    Grid est un système bidimensionnel qui permet de créer des mises en page
+    plus complexes avec des lignes et des colonnes. Il est particulièrement
+    utile pour les mises en page à deux dimensions. */
+}
+
+.conteneurGrid div {
+        border: 1px solid black;
+        aspect-ratio: 1/1; /* Permet d'obtenir des cases carrées */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

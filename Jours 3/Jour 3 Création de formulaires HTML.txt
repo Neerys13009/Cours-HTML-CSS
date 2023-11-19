@@ -1,0 +1,28 @@
+6. Formulaires HTML
+Les formulaires sont cruciaux pour collecter des données utilisateur. Voici comment créer un formulaire simple en HTML :
+
+
+<form action="/submit_form" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom">
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email">
+
+    <label for="motDePasse">Mot de passe :</label>
+    <input type="password" id="motDePasse" name="motDePasse">
+
+    <input type="submit" value="Envoyer">
+</form>
+
+
+<form> englobe l'ensemble du formulaire. L'attribut action spécifie l'URL de destination pour les données, et method indique comment les données seront envoyées (ici, en utilisant la méthode POST).
+
+<label> définit une étiquette pour un champ de saisie. L'attribut for doit correspondre à l'ID de l'élément associé.
+
+<input> est utilisé pour différents types de saisies (texte, email, mot de passe). L'attribut type spécifie le type d'entrée.
+
+Le bouton <input type="submit"> envoie le formulaire.
+
+Activité pratique:
+Projet 3: Intègre un formulaire HTML simple dans ta page. Ajoute des champs pour le nom, l'email et le mot de passe. Tu peux utiliser un bouton de soumission pour simuler l'envoi du formulaire.
