@@ -1,0 +1,33 @@
+# Jours 8: Burger Menu - JavaScript
+
+## JavaScript : Gestion du Burger Menu
+
+### Sélection des Éléments :
+
+const links = document.querySelectorAll('nav li');
+const icons = document.getElementById('icons');
+const nav = document.querySelector('nav');
+
+- `links` : Sélectionne tous les liens de navigation.
+- `icons` : Sélectionne l'icône du Burger Menu.
+- `nav` : Sélectionne la barre de navigation.
+
+### Gestion des Événements :
+
+#### Ouverture/Fermeture de la Navigation :
+
+icons.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+- Ajoute ou supprime la classe 'active' pour ouvrir/fermer la navigation.
+
+#### Fermeture de la Navigation sur Clic d'un Lien :
+
+links.forEach((link) => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
+
+- Supprime la classe 'active' lorsque l'un des liens de navigation est cliqué.
