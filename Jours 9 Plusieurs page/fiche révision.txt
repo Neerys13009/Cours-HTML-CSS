@@ -1,0 +1,19 @@
+# Révision PHP
+
+## Utilisation de ob_start() et ob_get_clean()
+
+<?php
+ob_start(); // Démarre la mémoire tampon de sortie
+?>
+
+<h1>Page Esport</h1>
+<!-- TOUT LE CONTENU HTML ICI -->
+
+<?php
+$content = ob_get_clean(); // Récupère le contenu mis en mémoire tampon
+require_once "template.php"; // Inclut le fichier template.php
+?>
+
+ob_start() : Démarre la mémoire tampon de sortie, permettant de stocker le contenu généré.
+$content = ob_get_clean(); : Récupère le contenu mis en mémoire tampon dans la variable $content et nettoie la mémoire tampon.
+require_once "template.php"; : Inclut le fichier template.php, où le contenu peut être inséré dans une structure de modèle.
